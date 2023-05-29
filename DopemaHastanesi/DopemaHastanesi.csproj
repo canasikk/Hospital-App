@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{851D2824-31D2-4A79-91CF-4C0AE53645C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DopemaHastanesi</RootNamespace>
+    <AssemblyName>DopemaHastanesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.2.8.10</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>5928530_building_estate_healthcare_hospital_medical_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkrani.Designer.cs">
+      <DependentUpon>AdminEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoktorEkrani.Designer.cs">
+      <DependentUpon>DoktorEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaOlusturEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaOlusturEkrani.Designer.cs">
+      <DependentUpon>HastaOlusturEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceteYaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteYaz.Designer.cs">
+      <DependentUpon>ReceteYaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TekliDuyuruEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TekliDuyuruEkrani.Designer.cs">
+      <DependentUpon>TekliDuyuruEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim.cs" />
+    <Compile Include="OturumEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OturumEkrani.Designer.cs">
+      <DependentUpon>OturumEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SekreterEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SekreterEkrani.Designer.cs">
+      <DependentUpon>SekreterEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashEkrani.Designer.cs">
+      <DependentUpon>SplashEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminEkrani.resx">
+      <DependentUpon>AdminEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoktorEkrani.resx">
+      <DependentUpon>DoktorEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaOlusturEkrani.resx">
+      <DependentUpon>HastaOlusturEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OturumEkrani.resx">
+      <DependentUpon>OturumEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceteYaz.resx">
+      <DependentUpon>ReceteYaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SekreterEkrani.resx">
+      <DependentUpon>SekreterEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashEkrani.resx">
+      <DependentUpon>SplashEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TekliDuyuruEkrani.resx">
+      <DependentUpon>TekliDuyuruEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="5928530_building_estate_healthcare_hospital_medical_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
